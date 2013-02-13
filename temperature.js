@@ -8,6 +8,7 @@ function calculate() {
 	var regexp = /-?[0-9]*\.?[0-9]*[a-zA-Z]+/;
 
 	var m = temp.match(regexp);
+	m = m[0];	
 
 	if (m) {
 		var num = m.substring(m.length-1, 0);
@@ -27,6 +28,6 @@ function calculate() {
 
 	}
 	else {
-		converted.innerHTML = "ERROR! Try something lik '-4.2' instead";
+		converted.innerHTML = "ERROR! Try something like '-4.2' instead";
 	}
 }
